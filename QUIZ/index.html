@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+    <title>The Coolest Quizzz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="container">
+            <div class="topo">
+                <div id="topoTitulo">
+                    <div class="banner">
+                        <img src="resources/bannerespaco.png" alt="Banner" width="100%">
+                        <h1 style="text-align: center;">Quiz Espaço Sideral</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="perguntas">
+                <div id="meioPerguntas" class="grid-container1">
+                    <div class="grid-item1">
+                        <div class="box"><b>PERGUNTA 1</b></div>
+                        <p>Qual é a principal força que mantém os planetas em órbita ao redor do Sol?</p>
+                    </div>
+                    <div class="grid-item1">
+                        <div class="box"><b>PERGUNTA 2</b></div>
+                        <p>Qual é a principal força que mantém os planetas em órbita ao redor do Sol?</p>
+                    </div>
+                    <div class="grid-item1">
+                        <div class="box"><b>PERGUNTA 3</b></div>
+                        <p>Qual é a principal razão pela qual os astronautas precisam usar trajes espaciais?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Labels">
+                <div id="meioLabels" class="grid-container2">
+                    <div class="grid-item2"><label><b>Escolha sua resposta</b></label></div>
+                    <div class="grid-item2"><label><b>Escolha sua resposta</b></label></div>
+                    <div class="grid-item2"><label><b>Escolha sua resposta</b></label></div>
+                </div>
+            </div>
+            <div class="Selects">
+                <div id="meioSelects" class="grid-container">
+                    <div class="grid-item3">
+                        <select id="escolha1">
+                            <option value="0">Escolha a resposta</option>
+                            <option value="1">Força centrífuga</option>
+                            <option value="2">Força gravitacional</option>
+                            <option value="3">Força magnética</option>
+                        </select>
+                    </div>
+                    <div class="grid-item3">
+                        <select id="escolha2">
+                            <option value="0">Escolha a resposta</option>
+                            <option value="1">100 km/h</option>
+                            <option value="2">1.000 km/h</option>
+                            <option value="3">10.000 km/h</option>
+                        </select>
+                    </div>
+                    <div class="grid-item3">
+                        <select id="escolha3">
+                            <option value="0">Escolha a resposta</option>
+                            <option value="1">Para manter a pressão atmosférica</option>
+                            <option value="2">Para protegê-los da radiação solar</option>
+                            <option value="3">Para fornecer oxigênio</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="resultado">
+                <div id="baixoResultado">
+                    <button onclick="somapontos()">Verificar Pontos</button>
+                    <div id="resultadoFinal" style="display: none;">
+                        <p id="resultadoTexto"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="reenviar">
+                <button onclick="location.reload()">Reenviar</button>
+        </div>
+    </div>
+    
+</body>
+<footer>
+    <p>Feito com ♥ por Mark</p>
+</footer>
+</html>
